@@ -1,0 +1,353 @@
+/* Сброс стилей для всех элементов */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Сброс стилей для HTML и body */
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 1.4;
+  background-color: transparent;
+}
+
+/* Сброс стилей для ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Сброс стилей для списков */
+ul, ol {
+  list-style: none;
+}
+
+/* Сброс стилей для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Сброс стилей для изображений */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Сброс стилей для формы */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+/* Убираем отступы и обводки у формы */
+input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/roboto-v47-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.4;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;   /* Элементы идут вертикально */
+    justify-content: flex-start;  /* Выравнивание элементов по верхнему краю */
+    align-items: center;     /* Центрирование содержимого по горизонтали */
+    margin: 0; 
+    margin-top: 20px;
+}
+
+.nav-bar{
+    width: 100%;
+    height: 61px;
+    text-align: center;
+    margin-top: 0px; /* Отступ сверху */
+    flex-grow: 0;   /* Запрещаем растягивание */
+}
+
+.nav{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    color: #703412;
+    font-size: 14px;
+}
+
+.nav a {
+    margin: 0 70px;
+}
+
+.container-one {
+    width: 100%;
+    height: 572px;
+}
+
+.container-one-a p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 44px;
+    letter-spacing: 1.6px;
+    color: #703412;
+    margin-top: 120px;
+    margin-left: 420px;
+}
+
+.container-one-b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    color: #703412;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.container-one-b p {
+  margin-left: 420px;
+}
+
+.container-two-large {
+  width: 100%;
+  height: 1941px;
+}
+
+.container-two {
+  width: 1056px;
+  height: 1941px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: row; /* Элементы будут располагаться горизонтально */
+  justify-content: flex-start; /* Контейнеры начнут располагаться с левого края */
+  align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+  flex-wrap: wrap;
+}
+
+.container-two-a{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41.6px;
+  color: #703412;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 0; /* или любое другое значение, чтобы установить размер изображения */
+}
+
+.text-box-1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #703412;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.text-box-2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #703412;
+  margin-left: 25px;
+}
+.box-1 {
+  width: 312px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 200px;
+}
+
+.box-2 {
+  width: 312px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 200px;
+}
+
+.box-3 {
+  width: 312px;
+  height: 400px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 200px;
+}
+
+.box-4 {
+  width: 312px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.box-5 {
+  width: 312px;
+  height: 412px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.box-6 {
+  width: 312px;
+  height: 412px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.box-7 {
+  width: 312px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.box-8 {
+  width: 312px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.box-9 {
+  width: 312px;
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+.container-footer{
+  width: 1200px;
+  height: 644px;
+  background-color: #084935;
+  margin-left: auto;
+  margin-right: auto;
+  
+}  
+
+.container-contact {
+  width: 1200px;
+  height: 20px;
+  margin-top: 100px;
+}
+
+.con {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  color: white;
+  margin-left: 80px;
+}
+
+.footer-txt {
+  width: 711px;
+  height: 85px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.focused {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38.4px;
+  color: white;
+}
+
+.column {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.column-1 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+.column-2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.column-3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-left: 200px;
+  margin-top: 100px;
+}
+
+.column-4 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  margin-left: 200px;
+  margin-top: 100px;
+}
